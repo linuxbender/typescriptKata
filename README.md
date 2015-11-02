@@ -1,0 +1,2 @@
+# typescriptKata
+Typescript Kata
