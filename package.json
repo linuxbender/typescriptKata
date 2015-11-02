@@ -1,0 +1,15 @@
+{
+  "name": "typescriptKata",
+  "version": "1.0.0",
+  "description": "Typescript Kata with nodejs, angularjs",
+  "main": "src/server/app.ts",
+  "scripts": {
+    "test" : "mocha",
+    "clean" : "rm -dRf ./built",
+    "tsc:server" : "tsc -p ./src/server/",
+    "tsc" : "npm run tsc:server",
+    "tsc:w" : "npm run tsc -- -- --watch"
+  },
+  "author": "daniel glenn",
+  "license": "MIT"
+}

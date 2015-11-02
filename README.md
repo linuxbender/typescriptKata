@@ -1,2 +1,2 @@
-# typescriptKata
-Typescript Kata
+# Typescript Kata
+Typescript Kata with nodejs, angularjs
