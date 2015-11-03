@@ -2,7 +2,7 @@ module ch.app {
 
 	"use strict";
 
-	export class App {
+	export class Server {
 
 		private _env:string;
 
@@ -15,6 +15,6 @@ module ch.app {
 "use strict";
 
 // alias
-import App = ch.app.App;
+import Server = ch.app.Server;
 
-var app = new App("d");
+var app = new Server("d");
