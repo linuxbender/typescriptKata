@@ -2,12 +2,12 @@ module ch.app.ruleEngine {
 
 	"use strict";
 
-	interface RuleEngine<TResult> {
+	interface Engine<TResult> {
 
 		DoWork(): TResult;
 	}
 
-	interface RuleType<TResult> {
+	interface ResultType<TResult> {
 		getResult: TResult;
 		hitme: boolean;
 	}
@@ -17,15 +17,15 @@ module ch.app.ruleEngine {
 		Excecute(): TRule;
 	}
 
-	export class RuleEngine implements RuleEngine<RuleType<number>> {
+	export class RuleEngine implements Engine<ResultType<number>> {
 
-        private _rules: BusinessRule<RuleType<number>>[];
+        private _rules: BusinessRule<ResultType<number>>[];
 
-		constructor(rules: BusinessRule<RuleType<number>>[]) {
+		constructor(rules: BusinessRule<ResultType<number>>[]) {
 			this._rules = rules;
 		}
 
-		DoWork(): RuleType<number> {
+		DoWork(): ResultType<number> {
 			
 			this._rules.map((rule) => {
 				if(rule.Excecute().hitme){
