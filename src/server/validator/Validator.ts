@@ -1,17 +1,19 @@
 
 
-module ch.app.validator {
-	
-	"use strict";
+namespace ch.app.validator {
 
-	export class Validator implements Validate {
+	export class Validator implements IValidate {
 
 		constructor() {
 
 		}
 
-		isValid(): boolean {
+		IsValid(): boolean {
 			return true;
 		}
 	}
+    
+    class ValidatorFactory {
+        // IValidate    
+    }
 }

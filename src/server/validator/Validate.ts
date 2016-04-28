@@ -1,9 +1,10 @@
-module ch.app.validator {
+namespace ch.app.validator {
 
-	"use strict";
-
-	export interface Validate {
-
+	/*export interface Validate {
 		isValid(): Boolean;
-	}
+	}*/
+    
+    export interface IValidate {
+       IsValid<T>():T; 
+    }
 }

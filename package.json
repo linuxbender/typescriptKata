@@ -1,5 +1,5 @@
 {
-  "name": "typescriptKata",
+  "name": "typescriptkata",
   "version": "1.0.0",
   "description": "Typescript Kata with nodejs, angularjs",
   "main": "src/server/app.ts",
