@@ -3,7 +3,7 @@ namespace ch.app.businessRules {
     import ISaldierungsAuftrag = ch.app.dto.ISaldierungsAuftrag;
     import IZahlungElement = ch.app.dto.IZahlungElement;
     
-    export class RestbetragIstGesetzt implements IRule<boolean> {
+    export class RestbetragIstGesetzt implements ISpec<boolean> {
         
         constructor(protected saldierungsAuftrag: ISaldierungsAuftrag) {}
         
@@ -14,7 +14,7 @@ namespace ch.app.businessRules {
         }
     }
     
-    export class SaldierungsAuftragHatMaxDreisigZahlungen implements IRule<boolean> {
+    export class SaldierungsAuftragHatMaxDreisigZahlungen implements ISpec<boolean> {
         
         constructor(protected saldierungsAuftrag: ISaldierungsAuftrag) {}
         
